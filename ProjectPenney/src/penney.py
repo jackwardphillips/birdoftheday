@@ -1,8 +1,10 @@
+import re
 import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 from collections import deque
+from pathlib import Path
 
 from src.datagen import datagen
 datagen = datagen(27) # test seed, over 100,000 decks created
@@ -16,90 +18,104 @@ class Penney:
         decks = datagen.load_decks()
         self.decks = decks
         self.sequences = SEQUENCES
+        self.cards = CARD_SEQUENCES
 
-    @debugger_factory()
-    def game(self, p1:list, p2:list, decks:np.array) -> tuple[int, int]:
+    #@debugger_factory()
+    def game(self, p1:list, p2:list, deck:np.array) -> tuple[int, int]:
         """
         Simulates Penney's game using sequences of cards.
         Each player chooses a sequence of cards, and the 
-        function iterates through one or multiple decks and
+        function iterates through a given deck and
         counts how often one player's sequence appears first,
         i.e. they win that trick.
     
         Args:
-            p1 (np.array): Player 1's three-card sequence
-            p2 (np.array): Player 2's three-card sequence
-            decks (np.array): A collection of decks of cards
+            p1 (list): Player 1's three-card sequence
+            p2 (list): Player 2's three-card sequence
+            deck (np.array): A deck of cards
     
         Returns:
             tuple: A tuple (p1_wins, p2_wins) counting each
             player's wins.
         """
+
+        deck = ''.join(deck.astype(str))
+        p1_tricks = 0
+        p2_tricks = 0
+        idx = 0
+        while idx < len(deck):
+            try:
+                p1_idx = deck.index(p1, idx)
+            except ValueError:
+                p1_idx = len(deck)
+            try:
+                p2_idx = deck.index(p2, idx)
+            except ValueError:
+                p2_idx = len(deck)
+
+            if p1_idx == len(deck) and p2_idx == len(deck):
+                break
+
+            if p1_idx < p2_idx:
+                p1_tricks += 1
+                idx = p1_idx + 3
+            elif p1_idx > p2_idx:
+                p2_tricks += 1
+                idx = p2_idx + 3
         
-        p1_wins = 0 
+    
+        return p1_tricks, p2_tricks
+        
+    #@debugger_factory()
+    def matchup(self, p1: np.array, p2:np.array, decks: np.ndarray) -> float:
+        """
+        Runs Penney's game over all the decks for
+        one card matchup.
+
+        Returns the number of wins and ties for each player.
+        """
+
+        p1_wins = 0
         p2_wins = 0
-
-        deck_length = len(decks[0])
-        
-        for deck in self.decks:
-            
-            p1_tricks = 0
-            p2_tricks = 0
-        
-            i = 0
-            while i < deck_length - 2: # stay in bounds
-                if deck[i:i+3] == p1:
-                    p1_tricks += 1
-                    i = i+3
-                
-                elif deck[i:i+3] == p2:
-                    p2_tricks += 1
-                    i = i+3
-
-                else:
-                    i+1
-            ######
-            # for card in deck:
-            #     hand.append(card) # draw cards
-            #     if len(hand) >= 3: # don't check for your sequence until there are at least 3 cards
-            #         if np.array_equal(np.array(hand), p1): # checks if the last 3 cards in the hand are the sequence
-            #             p1_tricks += 1
-            #             hand.clear()
-            #         elif np.array_equal(np.array(hand), p2):
-            #             p2_tricks += 1
-            #             hand.clear()
+        draws = 0
+        # iterate over all the decks
+        for deck in decks:
+            p1_tricks, p2_tricks = self.game(p1, p2, deck)
             if p1_tricks > p2_tricks:
                 p1_wins += 1
             elif p2_tricks > p1_tricks:
                 p2_wins += 1
-    
-        return p1_wins, p2_wins
-        
-    @debugger_factory()
-    def game_sim(self) -> pd.DataFrame:
-        """
-        Runs Penney's game over all different sequences
-        and returns a matrix of the results.
-        """
-        
-        win_matrix = np.zeros((8, 8))
-    
-        for i, p1 in enumerate(self.sequences): # enumerate over each sequence
-            for j, p2 in enumerate(self.sequences):
-                if i != j: # don't test sequences against themselves
-                    p1_wins, p2_wins = self.game(p1, p2, self.decks)
-                    if p1_wins + p2_wins == 0:
-                        win_matrix[i, j] = 0
-                    else:
-                        win_matrix[i, j] = p1_wins/(p1_wins+p2_wins) 
-    
-        win_df = pd.DataFrame(win_matrix, index=[str(seq) for seq in self.sequences], columns=[str(seq) for seq in self.sequences])
-        win_df = win_df.replace(0.0, np.nan)
-        
-        return win_df
+            elif p1_tricks == p2_tricks:
+                draws += 1
+                
+        return p1_wins, p2_wins, draws
 
     @debugger_factory()
-    def heatmap(self, df:pd.DataFrame) -> plt.Figure:
+    def showdown(self, heatmap:bool = True) -> pd.DataFrame:
+        """
+        """
+        
+        int_df = pd.DataFrame(index = self.cards, columns = self.cards, dtype = int)
+        str_df = pd.DataFrame(index = self.cards, columns = self.cards, dtype = str)
+        for i, p1 in enumerate(self.sequences):
+            for j, p2 in enumerate(self.sequences):
+                if i == j:
+                    int_df.iloc[i, j] = np.nan
+                    str_df.iloc[i, j] = ''
+                else:
+                    p1_wins, p2_wins, draws = self.matchup(p1, p2, self.decks)
+                    total_games = p1_wins + p2_wins + draws
+                    win_pct = round((p1_wins / total_games)*100, 0)
+                    draw_pct = round((draws / total_games)*100, 0)
+                    int_df.iloc[i, j] = win_pct
+                    str_df.iloc[i, j] = f'{int(win_pct)}({int(draw_pct)})'
+        if heatmap:
+            self.heatmap(int_df, str_df)
+                    
+        return int_df, str_df
+
+    @debugger_factory()
+    def heatmap(self, int_df:pd.DataFrame, str_df:pd.DataFrame) -> plt.Figure:
         """
         Takes the results from game_sim() and creates
         a heatmap.
@@ -109,9 +125,35 @@ class Penney:
         """
     
         fig, ax = plt.subplots(figsize=(10, 8))
-        sns.heatmap(df, annot=True, cmap='Purples', linewidths=0.5, ax=ax)
+        sns.heatmap(int_df, annot=str_df, fmt="", cmap='Purples', linewidths=0.5, ax=ax)
         ax.set_xticklabels(CARD_SEQUENCES, rotation=45, ha='right')
         ax.set_yticklabels(CARD_SEQUENCES, rotation=0)
-        ax.set_title(f"Penney's Game Winning Percentages over {len(self.decks)} decks.")
+        ax.set_xlabel("Player 1's Choice")
+        ax.set_ylabel("Player 2's Choice")
+        ax.set_title(f"Penney's Game Player 1 Win%(Draw%) over {len(self.decks)} decks.")
+
+        folder = Path(figures)
+        for file in folder
+            os.remove(file)
+        
+        # Save the figure
+        fig_path = f"figures/heatmap_{len(self.decks)}.png"
+        fig.savefig(fig_path, dpi=300, bbox_inches='tight')
     
-        return
+        return f'Figure saved to {fig_path}'
+
+    def last_game() -> int:
+        folder_path = Path("figures")
+        file_path = next(folder_path.glob("*.png"), None)  # Get the first .png file, or None if no file
+
+        if file_path:
+            filename = file_path.stem
+            match = re.search(r'\d+', filename)
+            if match:
+                return int(match.group())  
+
+        return 0  
+
+    def 
+
+            

@@ -26,6 +26,7 @@ class datagen:
     @debugger_factory()
     def create_decks(self,
                   n_decks: int,
+                  load_decks: bool = True
                  ) -> np.ndarray:
         """
         Efficiently generate `n_decks` shuffled decks using NumPy.
@@ -34,7 +35,7 @@ class datagen:
         one. Otherwise, the new data is appended to previously
         generated data.
         """
-
+        
         # create the decks
         init_deck = [0]*self.half_deck_size + [1]*self.half_deck_size  # Base deck
         decks = np.tile(init_deck, (n_decks, 1))
@@ -62,7 +63,9 @@ class datagen:
         Returns the decks for the instance's seed.
         """
         if os.path.exists(f'data/decks_{self.seed}.npy'):
-            return np.load(f'data/decks_{self.seed}.npy')
+            decks = np.load(f'data/decks_{self.seed}.npy')
+            print(f'Loaded {len(decks)} decks.')
+            return decks
         else:
             return 'File not found.'
 

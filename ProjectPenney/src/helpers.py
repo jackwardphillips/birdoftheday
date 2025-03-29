@@ -5,7 +5,9 @@ from typing import Callable
 
 PATH_DATA = 'data'
 
+# if DEBUG is set to true, debugger_factory will print arguments
 DEBUG = False
+# if TIMER is set to true, debugger_factory will print the execution time
 TIMER = True
 
 def debugger_factory() -> Callable:
@@ -28,16 +30,17 @@ def debugger_factory() -> Callable:
         return wrapper
     return debugger
 
-SEQUENCES = np.array([0, 0, 0], 
-                        [1, 0, 0], 
-                        [0, 1, 0], 
-                        [0, 0, 1], 
-                        [1, 1, 0], 
-                        [1, 0, 1], 
-                        [0, 1, 1],
-                        [1, 1, 1]
-                     )
+# sequences that the game function can understand
+SEQUENCES = np.array(['000',
+                      '100',
+                      '010',
+                      '001',
+                      '110',
+                      '101',
+                      '011',
+                      '111'])
 
+# sequences that the user will be able to interpret
 CARD_SEQUENCES = np.array(['R R R',
                            'B R R',
                            'R B R',
