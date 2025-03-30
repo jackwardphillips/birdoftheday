@@ -25,8 +25,7 @@ class datagen:
 
     @debugger_factory()
     def create_decks(self,
-                  n_decks: int,
-                  load_decks: bool = True
+                  n_decks: int
                  ) -> np.ndarray:
         """
         Efficiently generate `n_decks` shuffled decks using NumPy.

@@ -1,4 +1,5 @@
 import re
+import os
 import numpy as np
 import pandas as pd
 import seaborn as sns
@@ -78,8 +79,10 @@ class Penney:
         p1_wins = 0
         p2_wins = 0
         draws = 0
+
+        untested = self.last_game()
         # iterate over all the decks
-        for deck in decks:
+        for deck in decks[untested:]:
             p1_tricks, p2_tricks = self.game(p1, p2, deck)
             if p1_tricks > p2_tricks:
                 p1_wins += 1
@@ -91,31 +94,53 @@ class Penney:
         return p1_wins, p2_wins, draws
 
     @debugger_factory()
-    def showdown(self, heatmap:bool = True) -> pd.DataFrame:
+    def showdown(self, heatmap:bool = True) -> None:
         """
         """
+        results_path = Path("results")
+        p1win_file = results_path / "p1wins.csv"
+        p2win_file = results_path / "p2wins.csv"
+        draw_file = results_path / "draws.csv"
+
+        try:
+            p1win_df = pd.read_csv(p1win_file, index_col=0).fillna(0).astype(int)
+        except FileNotFoundError:
+            p1win_df = pd.DataFrame(0, index=self.cards, columns=self.cards, dtype=int)
+
+        try:
+            p2win_df = pd.read_csv(p2win_file, index_col=0).fillna(0).astype(int)
+        except FileNotFoundError:
+            p2win_df = pd.DataFrame(0, index=self.cards, columns=self.cards, dtype=int)
+
+        try:
+            draw_df = pd.read_csv(draw_file, index_col=0).fillna(0).astype(int)
+        except FileNotFoundError:
+            draw_df = pd.DataFrame(0, index=self.cards, columns=self.cards, dtype=int)
         
-        int_df = pd.DataFrame(index = self.cards, columns = self.cards, dtype = int)
-        str_df = pd.DataFrame(index = self.cards, columns = self.cards, dtype = str)
+        
         for i, p1 in enumerate(self.sequences):
             for j, p2 in enumerate(self.sequences):
                 if i == j:
-                    int_df.iloc[i, j] = np.nan
-                    str_df.iloc[i, j] = ''
+                    p1win_df.iloc[i, j] = 0
+                    p2win_df.iloc[i, j] = 0
+                    draw_df.iloc[i, j] = 0
                 else:
                     p1_wins, p2_wins, draws = self.matchup(p1, p2, self.decks)
-                    total_games = p1_wins + p2_wins + draws
-                    win_pct = round((p1_wins / total_games)*100, 0)
-                    draw_pct = round((draws / total_games)*100, 0)
-                    int_df.iloc[i, j] = win_pct
-                    str_df.iloc[i, j] = f'{int(win_pct)}({int(draw_pct)})'
+                    p1win_df.iloc[i, j] = p1_wins + p1win_df.iloc[i, j]
+                    p2win_df.iloc[i, j] = p2_wins + p2win_df.iloc[i, j]
+                    draw_df.iloc[i, j] = draws + draw_df.iloc[i, j]
+
+        p1win_df.to_csv('results/p1wins.csv')
+        p2win_df.to_csv('results/p2wins.csv')
+        draw_df.to_csv('results/draws.csv')
+        
         if heatmap:
-            self.heatmap(int_df, str_df)
+            self.heatmap()
                     
-        return int_df, str_df
+        return
 
     @debugger_factory()
-    def heatmap(self, int_df:pd.DataFrame, str_df:pd.DataFrame) -> plt.Figure:
+    def heatmap(self) -> plt.Figure:
         """
         Takes the results from game_sim() and creates
         a heatmap.
@@ -123,7 +148,37 @@ class Penney:
         Args:
             df (pd.DataFrame): A data frame of the results of game_sim
         """
-    
+
+        p1_wins = pd.read_csv('results/p1wins.csv', index_col=0)
+        p2_wins = pd.read_csv('results/p2wins.csv', index_col=0)
+        draws = pd.read_csv('results/draws.csv', index_col=0)
+        
+        int_df = pd.DataFrame(index = self.cards, columns = self.cards, dtype = int)
+        str_df = pd.DataFrame(index = self.cards, columns = self.cards, dtype = str)
+
+        for i, p1 in enumerate(self.sequences):
+            for j, p2 in enumerate(self.sequences):
+                if i == j:
+                    int_df.iloc[i, j] = np.nan
+                    str_df.iloc[i, j] = ''
+                else:
+                    wins = int(p1_wins.iloc[i, j])
+                    losses = int(p2_wins.iloc[i, j])
+                    ties = int(draws.iloc[i, j])
+                    
+                    total_games = wins + losses + ties
+                    win_pct = round((wins / total_games)*100, 0)
+                    draw_pct = round((ties / total_games)*100, 0)
+                    int_df.iloc[i, j] = win_pct
+                    try:
+                        win_pct = int(win_pct)
+                        draw_pct = int(draw_pct)
+                    except:
+                        win_pct = 0
+                        draw_pct = 0
+                    
+                    str_df.iloc[i, j] = f'{int(win_pct)}({int(draw_pct)})'
+        
         fig, ax = plt.subplots(figsize=(10, 8))
         sns.heatmap(int_df, annot=str_df, fmt="", cmap='Purples', linewidths=0.5, ax=ax)
         ax.set_xticklabels(CARD_SEQUENCES, rotation=45, ha='right')
@@ -131,10 +186,6 @@ class Penney:
         ax.set_xlabel("Player 1's Choice")
         ax.set_ylabel("Player 2's Choice")
         ax.set_title(f"Penney's Game Player 1 Win%(Draw%) over {len(self.decks)} decks.")
-
-        folder = Path(figures)
-        for file in folder
-            os.remove(file)
         
         # Save the figure
         fig_path = f"figures/heatmap_{len(self.decks)}.png"
@@ -142,9 +193,12 @@ class Penney:
     
         return f'Figure saved to {fig_path}'
 
-    def last_game() -> int:
+    def last_game(self) -> int:
         folder_path = Path("figures")
-        file_path = next(folder_path.glob("*.png"), None)  # Get the first .png file, or None if no file
+        try:
+            file_path = sorted(folder_path.glob("*.png"))[-1]
+        except:
+            return 0
 
         if file_path:
             filename = file_path.stem
@@ -152,8 +206,4 @@ class Penney:
             if match:
                 return int(match.group())  
 
-        return 0  
-
-    def 
-
-            
+        return 0
