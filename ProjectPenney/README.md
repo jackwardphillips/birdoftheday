@@ -4,16 +4,14 @@ This repository contains a simulation of Penney's Game. Penney's game isa "binar
 
 ## How to Use
 
-The repository contains two folders, a src and data folder. The former contains three .py files, helpers.py, datagen.py, and penney.py. 
+The repository contains four folders and two main python scripts. The first folder is the src folder, which contains the code for creating the shuffled decks of cards and simulating the game. The second is the data folder, where seeds and instances are saved so the deck generator doesn't duplicate any decks. The third is the results folder, which stores the number of wins and draws for each player, so the game can be simulated over more decks without simulating over decks that have already been tested. The last is the figures folder, which is where heatmaps are saved. Heatmaps are saved with the number of decks they were created from in the name.
 
-Helpers.py contains a debugger factory, as well as the sequences the game is tested on as well as the sequences the heatmap produced in penney.py shows.
+The two python scripts are decks.py and game.py. Decks.py is where you can create decks, running
 
-Datagen.py is where the decks of cards are created. By calling create_decks, the function will create the amount of decks specified and randomly shuffle them all from a given seed. This seed state is also saved so more decks can be generated with no (or very little) chance of repetition. 
+uv run main.py
 
-Penney.py is where the game is simulated. The class Penney has three functions: game, game_sim, and heatmap. Game simulates Penney's game over multiple decks of cards. This is used by game_sim, which stores the experimental odds of each sequence against the other sequences. The function heatmap takes the dataframe returned by game_sim and creates a heatmap to visualize the results.
-
-In the provided example.ipynb file, if you download the repository you can see how the game can be simulated.
+will prompt you to enter a number to create more decks, and will create them. It will also tell you how many decks already exist. The second python script is game.py, where the game is actually simulated. It will run the game and create a new heatmap for you.
 
 ## Dependencies
 
-This repository uses numpy, pandas, seaborn, and matplotlib.
+This repository uses numpy, pandas, seaborn, matplotlib, pathlib, re, datetime, os, and json.

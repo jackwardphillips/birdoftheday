@@ -1,10 +1,8 @@
 import re
-import os
 import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-from collections import deque
 from pathlib import Path
 
 from src.datagen import datagen
@@ -71,7 +69,9 @@ class Penney:
     def matchup(self, p1: np.array, p2:np.array, decks: np.ndarray) -> float:
         """
         Runs Penney's game over all the decks for
-        one card matchup.
+        one card matchup. Uses the last_game() function
+        to determine how many decks the last game was
+        simulated over and doesn't run those decks again.
 
         Returns the number of wins and ties for each player.
         """
@@ -81,8 +81,9 @@ class Penney:
         draws = 0
 
         untested = self.last_game()
+        decks = decks[untested:]
         # iterate over all the decks
-        for deck in decks[untested:]:
+        for deck in decks:
             p1_tricks, p2_tricks = self.game(p1, p2, deck)
             if p1_tricks > p2_tricks:
                 p1_wins += 1
@@ -96,7 +97,17 @@ class Penney:
     @debugger_factory()
     def showdown(self, heatmap:bool = True) -> None:
         """
+        Simulates the matchup() function over all the matchups.
+        Takes the results and appends the new results to them
+        or creates a new dataframe if they don't exist.
+        The results are saved to a csv file in the results
+        directory. The function also takes an argument, 'heatmap',
+        which can be set to True or False. If True, the function
+        will create a heatmap of the results and save it to the
+        figures directory.
         """
+
+        # Load in previous results
         results_path = Path("results")
         p1win_file = results_path / "p1wins.csv"
         p2win_file = results_path / "p2wins.csv"
@@ -142,11 +153,8 @@ class Penney:
     @debugger_factory()
     def heatmap(self) -> plt.Figure:
         """
-        Takes the results from game_sim() and creates
+        Takes the results from the results folder and creates
         a heatmap.
-    
-        Args:
-            df (pd.DataFrame): A data frame of the results of game_sim
         """
 
         p1_wins = pd.read_csv('results/p1wins.csv', index_col=0)
@@ -194,6 +202,13 @@ class Penney:
         return f'Figure saved to {fig_path}'
 
     def last_game(self) -> int:
+        """
+        Loads the heatmap from the last game and returns
+        the number of decks that were used in the last
+        game. This is used to determine how many decks
+        have already been simulated over and to avoid
+        running them again.
+        """
         folder_path = Path("figures")
         try:
             file_path = sorted(folder_path.glob("*.png"))[-1]
