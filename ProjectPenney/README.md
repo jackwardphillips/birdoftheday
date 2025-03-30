@@ -8,9 +8,13 @@ The repository contains four folders and two main python scripts. The first fold
 
 The two python scripts are decks.py and game.py. Decks.py is where you can create decks, running
 
-uv run main.py
+uv run decks.py
 
-will prompt you to enter a number to create more decks, and will create them. It will also tell you how many decks already exist. The second python script is game.py, where the game is actually simulated. It will run the game and create a new heatmap for you.
+will prompt you to enter a number to create more decks, and will create them. It will also tell you how many decks already exist. The second python script is game.py, where the game is actually simulated. It will run the game and create a new heatmap for you. Simply type
+
+uv run game.py
+
+and the game will run, unless there are no new decks to run the game over.
 
 ## Dependencies
 
