@@ -1,0 +1,102 @@
+Row #,Taxon Order,Category,Common Name,Scientific Name,Count,Location,S/P,Date,LocID,SubID,Exotic,Countable
+1,17165,species,Great Crested Flycatcher,Myiarchus crinitus,1,Wythe Avenue,US-VA,26 Apr 2025,L40299896,S229796174,,1
+2,33779,species,American Redstart,Setophaga ruticilla,2,New Quarter Park,US-VA,26 Apr 2025,L286165,S229595482,,1
+3,33673,species,Worm-eating Warbler,Helmitheros vermivorum,1,New Quarter Park,US-VA,26 Apr 2025,L286165,S229595482,,1
+4,19067,species,Red-eyed Vireo,Vireo olivaceus,1,New Quarter Park,US-VA,26 Apr 2025,L286165,S229595482,,1
+5,33587,species,Great-tailed Grackle,Quiscalus mexicanus,5,Flamingo Wildlife Habitat,US-NV,20 Apr 2025,L43063804,S227510310,,1
+6,23957,species,Barn Swallow,Hirundo rustica,1,Greensprings Interpretive Trail,US-VA,14 Apr 2025,L280466,S225677425,,1
+7,441,species,Wood Duck,Aix sponsa,4,Greensprings Interpretive Trail,US-VA,14 Apr 2025,L280466,S225677425,,1
+8,26683,species,Brown-headed Nuthatch,Sitta pusilla,2,Colonial Parkway - Glebe Land,US-VA,14 Apr 2025,L39582121,S225584624,,1
+9,8228,species,Northern Harrier,Circus hudsonius,1,VA-ISS-50,US-VA,05 Apr 2025,L3095846,S223188877,,1
+10,7635,species,Great Egret,Ardea alba,14,VA-ISS-50,US-VA,05 Apr 2025,L3095846,S223188877,,1
+11,7557,species,Snowy Egret,Egretta thula,10,VA-ISS-50,US-VA,05 Apr 2025,L3095846,S223188877,,1
+12,7382,species,Glossy Ibis,Plegadis falcinellus,27,VA-ISS-50,US-VA,05 Apr 2025,L3095846,S223188877,,1
+13,6092,species,Greater Yellowlegs,Tringa melanoleuca,1,VA-ISS-50,US-VA,05 Apr 2025,L3095846,S223188877,,1
+14,5997,species,Short-billed Dowitcher,Limnodromus griseus,10,VA-ISS-50,US-VA,05 Apr 2025,L3095846,S223188877,,1
+15,33576,species,Common Grackle,Quiscalus quiscula,20,Greensprings Interpretive Trail,US-VA,03 Apr 2025,L280466,S222753168,,1
+16,16840,species,Eastern Phoebe,Sayornis phoebe,1,Mainland Farm/Drummond's Field,US-VA,02 Apr 2025,L2830270,S222538299,,1
+17,588,species,Green-winged Teal,Anas crecca,2,Mainland Farm/Drummond's Field,US-VA,02 Apr 2025,L2830270,S222538299,,1
+18,33033,species,Swamp Sparrow,Melospiza georgiana,2,Mainland Farm/Drummond's Field,US-VA,29 Mar 2025,L2830270,S221704236,,1
+19,32962,species,Savannah Sparrow,Passerculus sandwichensis,2,Mainland Farm/Drummond's Field,US-VA,29 Mar 2025,L2830270,S221704236,,1
+20,27054,species,Winter Wren,Troglodytes hiemalis,1,Mainland Farm/Drummond's Field,US-VA,29 Mar 2025,L2830270,S221704236,,1
+21,26874,species,Blue-gray Gnatcatcher,Polioptila caerulea,2,Mainland Farm/Drummond's Field,US-VA,29 Mar 2025,L2830270,S221704236,,1
+22,33556,species,Brown-headed Cowbird,Molothrus ater,1,New Quarter Park,US-VA,22 Mar 2025,L286165,S219965810,,1
+23,6455,species,Ring-billed Gull,Larus delawarensis,1,New Quarter Park,US-VA,22 Mar 2025,L286165,S219965810,,1
+24,6424,species,Laughing Gull,Leucophaeus atricilla,3,New Quarter Park,US-VA,22 Mar 2025,L286165,S219965810,,1
+25,6397,species,Bonaparte's Gull,Chroicocephalus philadelphia,3,New Quarter Park,US-VA,22 Mar 2025,L286165,S219965810,,1
+26,33571,species,Rusty Blackbird,Euphagus carolinus,3,College of William & Mary,US-VA,21 Mar 2025,L2341699,S219836986,,1
+27,26595,species,Ruby-crowned Kinglet,Corthylio calendula,1,College of William & Mary,US-VA,21 Mar 2025,L2341699,S219836986,,1
+28,6776,species,Pied-billed Grebe,Podilymbus podiceps,1,College of William & Mary,US-VA,21 Mar 2025,L2341699,S219836986,,1
+29,33868,species,Pine Warbler,Setophaga pinus,3,New Quarter Park,US-VA,17 Mar 2025,L286165,S219140164,,1
+30,7737,species,Osprey,Pandion haliaetus,2,New Quarter Park,US-VA,17 Mar 2025,L286165,S219140164,,1
+31,7504,species,Yellow-crowned Night Heron,Nyctanassa violacea,1,Hotel on the Cay,VI-SC,13 Mar 2025,L4484786,S218296515,,1
+32,7233,species,Magnificent Frigatebird,Fregata magnificens,4,Hotel on the Cay,VI-SC,13 Mar 2025,L4484786,S218279162,,1
+33,6064,species,Spotted Sandpiper,Actitis macularius,1,Cathy’s Fancy Beach,VI-SC,13 Mar 2025,L41164363,S218250223,,1
+34,27767,species,Pearly-eyed Thrasher,Margarops fuscatus,1,Buck Island,VI-SC,12 Mar 2025,L572358,S218091472,,1
+35,4344,species,Green-throated Carib,Eulampis holosericeus,1,Buck Island,VI-SC,12 Mar 2025,L572358,S218091472,,1
+36,6099,species,Ruddy Turnstone,Arenaria interpres,4,Hotel on the Cay,VI-SC,11 Mar 2025,L4484786,S217934607,,1
+37,35357,species,Bananaquit,Coereba flaveola,5,St. Croix AirBnB,VI-SC,10 Mar 2025,L41076315,S217763488,,1
+38,17304,species,Gray Kingbird,Tyrannus dominicensis,1,St. Croix AirBnB,VI-SC,10 Mar 2025,L41076315,S217763488,,1
+39,4880,species,Antillean Crested Hummingbird,Orthorhyncus cristatus,1,St. Croix AirBnB,VI-SC,10 Mar 2025,L41076315,S217763488,,1
+40,2354,species,Zenaida Dove,Zenaida aurita,1,St. Croix AirBnB,VI-SC,10 Mar 2025,L41076315,S217763488,,1
+41,21346,species,Fish Crow,Corvus ossifragus,2,Wythe Avenue,US-VA,09 Mar 2025,L40299896,S217512275,,1
+42,23834,species,Tree Swallow,Tachycineta bicolor,7,Matoaka Lake and Woods,US-VA,05 Mar 2025,L1320412,S216746338,,1
+43,487,species,Gadwall,Mareca strepera,1,Matoaka Lake and Woods,US-VA,05 Mar 2025,L1320412,S216746338,,1
+44,28081,species,Hermit Thrush,Catharus guttatus,1,College of William & Mary,US-VA,27 Feb 2025,L2341699,S215719317,,1
+45,32338,species,American Goldfinch,Spinus tristis,1,Wythe Avenue,US-VA,26 Feb 2025,L40299896,S215568143,,1
+46,33500,species,Red-winged Blackbird,Agelaius phoeniceus,1,Colonial Parkway - Glebe Land,US-VA,25 Feb 2025,L39582121,S215426788,,1
+47,7342,species,Double-crested Cormorant,Nannopterum auritum,1,Colonial Parkway - Glebe Land,US-VA,25 Feb 2025,L39582121,S215426788,,1
+48,8391,species,Red-shouldered Hawk,Buteo lineatus,2,College of William  and  Mary - Intramural Field,US-VA,31 Jan 2025,L40672537,S215727346,,1
+49,33136,species,Eastern Towhee,Pipilo erythrophthalmus,1,Wythe Avenue,US-VA,29 Jan 2025,L40299896,S215727560,,1
+50,33874,species,Yellow-rumped Warbler,Setophaga coronata,1,Colonial Parkway - Glebe Land,US-VA,22 Jan 2025,L39582121,S210308160,,1
+51,11035,species,Red-headed Woodpecker,Melanerpes erythrocephalus,1,Colonial Parkway - Glebe Land,US-VA,22 Jan 2025,L39582121,S210308160,,1
+52,10202,species,Belted Kingfisher,Megaceryle alcyon,2,Colonial Parkway - Glebe Land,US-VA,22 Jan 2025,L39582121,S210308160,,1
+53,32817,species,Fox Sparrow,Passerella iliaca,1,Colonial Parkway - Glebe Land,US-VA,20 Jan 2025,L39582121,S210052932,,1
+54,32995,species,Song Sparrow,Melospiza melodia,1,Antelope Island,US-UT,17 Jan 2025,L40672536,S215727364,,1
+55,21400,species,Common Raven,Corvus corax,1,Pikes Peak,US-CO,15 Jan 2025,L40672533,S215727362,,1
+56,11913,species,American Kestrel,Falco sparverius,1,Bear Creek Lake Park,US-CO,14 Jan 2025,L40672532,S215727361,,1
+57,21252,species,Black-billed Magpie,Pica hudsonia,1,Red Rocks Amphitheater,US-CO,14 Jan 2025,L40672531,S215727360,,1
+58,8811,species,Great Horned Owl,Bubo virginianus,1,Croton Point Park,US-NY,10 Jan 2025,L40672530,S215727359,,1
+59,8271,species,Bald Eagle,Haliaeetus leucocephalus,1,Edith G. Read Wildlife Sanctuary,US-NY,10 Jan 2025,L40672526,S215727539,,1
+60,550,species,American Black Duck,Anas rubripes,1,Marshlands Conservancy,US-NY,07 Jan 2025,L40672529,S215727458,,1
+61,6854,species,Common Loon,Gavia immer,1,Larchmont Manor Park,US-NY,06 Jan 2025,L40672528,S215727358,,1
+62,27571,species,European Starling,Sturnus vulgaris,1,Coffin Street,US-MA,04 Jan 2025,L40672527,S215727357,N,1
+63,21841,species,Black-capped Chickadee,Poecile atricapillus,1,Edith G. Read Wildlife Sanctuary,US-NY,31 Dec 2024,L40672526,S215727457,,1
+64,11647,species,Pileated Woodpecker,Dryocopus pileatus,1,Edith G. Read Wildlife Sanctuary,US-NY,31 Dec 2024,L40672526,S215727457,,1
+65,7658,species,Great Blue Heron,Ardea herodias,1,Edith G. Read Wildlife Sanctuary,US-NY,31 Dec 2024,L40672526,S215727457,,1
+66,729,species,Hooded Merganser,Lophodytes cucullatus,1,Edith G. Read Wildlife Sanctuary,US-NY,31 Dec 2024,L40672526,S215727457,,1
+67,717,species,Bufflehead,Bucephala albeola,1,Edith G. Read Wildlife Sanctuary,US-NY,31 Dec 2024,L40672526,S215727457,,1
+68,675,species,Lesser Scaup,Aythya affinis,1,Edith G. Read Wildlife Sanctuary,US-NY,31 Dec 2024,L40672526,S215727457,,1
+69,6472,species,American Herring Gull,Larus smithsonianus,1,Dalewood Shopping Center,US-NY,28 Dec 2024,L40672525,S215727456,,1
+70,1242,species,Wild Turkey,Meleagris gallopavo,1,Palisades Parkway,US-NY,28 Dec 2024,L40672524,S215727356,,1
+71,31261,species,House Sparrow,Passer domesticus,1,Davis Avenue,US-NY,28 Dec 2024,L40672523,S215727355,N,1
+72,9117,species,Barred Owl,Strix varia,1,The Center for Conservation Biology,US-VA,10 Dec 2024,L40672522,S215727354,,1
+73,32842,species,Dark-eyed Junco,Junco hyemalis,1,Wythe Avenue,US-VA,04 Dec 2024,L40299896,S215727557,,1
+74,11016,species,Yellow-bellied Sapsucker,Sphyrapicus varius,1,Wythe Avenue,US-VA,03 Dec 2024,L40299896,S215727556,,1
+75,8183,species,Cooper's Hawk,Astur cooperii,1,Central Park,US-NY,27 Nov 2024,L40672521,S215727353,,1
+76,365,species,Mute Swan,Cygnus olor,1,Central Park,US-NY,27 Nov 2024,L40672521,S215727353,N,1
+77,330,species,Canada Goose,Branta canadensis,1,Central Park,US-NY,27 Nov 2024,L40672521,S215727353,,1
+78,525,species,Mallard,Anas platyrhynchos,1,Central Park - Hallett Nature Sanctuary,US-NY,27 Nov 2024,L40672520,S215727352,,1
+79,1817,species,Rock Pigeon,Columba livia,1,Harlem-125th Street,US-NY,27 Nov 2024,L40672519,S215727351,N,1
+80,27795,species,Brown Thrasher,Toxostoma rufum,1,Wythe Avenue,US-VA,20 Nov 2024,L40299896,S215727555,,1
+81,11314,species,Hairy Woodpecker,Dryobates villosus,1,Wythe Avenue,US-VA,20 Nov 2024,L40299896,S215727555,,1
+82,11088,species,Red-bellied Woodpecker,Melanerpes carolinus,1,Wythe Avenue,US-VA,20 Nov 2024,L40299896,S215727555,,1
+83,2373,species,Mourning Dove,Zenaida macroura,1,Wythe Avenue,US-VA,19 Nov 2024,L40299896,S215727554,,1
+84,32919,species,White-throated Sparrow,Zonotrichia albicollis,1,Wythe Avenue,US-VA,10 Nov 2024,L40299896,S215727550,,1
+85,32034,species,House Finch,Haemorhous mexicanus,1,Wythe Avenue,US-VA,06 Nov 2024,L40299896,S215727548,N,1
+86,7716,species,Black Vulture,Coragyps atratus,1,Richmond Road - Septic Field,US-VA,05 Nov 2024,L40672517,S215727349,,1
+87,26640,species,White-breasted Nuthatch,Sitta carolinensis,1,Wythe Avenue,US-VA,02 Nov 2024,L40299896,S215727546,,1
+88,21066,species,Blue Jay,Cyanocitta cristata,1,Wythe Avenue,US-VA,02 Nov 2024,L40299896,S215727546,,1
+89,28313,species,American Robin,Turdus migratorius,1,Wythe Avenue,US-VA,01 Nov 2024,L40299896,S215727544,,1
+90,21836,species,Carolina Chickadee,Poecile carolinensis,1,Wythe Avenue,US-VA,01 Nov 2024,L40299896,S215727544,,1
+91,34224,species,Northern Cardinal,Cardinalis cardinalis,1,Wythe Avenue,US-VA,01 Nov 2024,L40299896,S215727542,,1
+92,32708,species,Chipping Sparrow,Spizella passerina,1,Wythe Avenue,US-VA,01 Nov 2024,L40299896,S215727542,,1
+93,27881,species,Eastern Bluebird,Sialia sialis,1,Wythe Avenue,US-VA,01 Nov 2024,L40299896,S215727542,,1
+94,27870,species,Northern Mockingbird,Mimus polyglottos,1,Wythe Avenue,US-VA,01 Nov 2024,L40299896,S215727542,,1
+95,27107,species,Carolina Wren,Thryothorus ludovicianus,1,Wythe Avenue,US-VA,01 Nov 2024,L40299896,S215727542,,1
+96,21936,species,Tufted Titmouse,Baeolophus bicolor,1,Wythe Avenue,US-VA,01 Nov 2024,L40299896,S215727542,,1
+97,11785,species,Northern Flicker,Colaptes auratus,1,Wythe Avenue,US-VA,01 Nov 2024,L40299896,S215727542,,1
+98,21333,species,American Crow,Corvus brachyrhynchos,1,Wythe Avenue,US-VA,30 Oct 2024,L40299896,S215727541,,1
+99,8410,species,Red-tailed Hawk,Buteo jamaicensis,1,Wythe Avenue,US-VA,29 Oct 2024,L40299896,S215727540,,1
+100,7720,species,Turkey Vulture,Cathartes aura,1,Wythe Avenue,US-VA,29 Oct 2024,L40299896,S215727540,,1
+101,11287,species,Downy Woodpecker,Dryobates pubescens,1,College of William  and  Mary - Integrated Science Center,US-VA,28 Oct 2024,L40672515,S215727348,,1
