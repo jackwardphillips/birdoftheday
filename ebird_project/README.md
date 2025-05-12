@@ -19,10 +19,7 @@ To run this project locally, follow these steps:
 
 ### Steps
 
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/jackwardphillips/AutomationWorkflows/ebird_project.git
+1. Download the repository from GitHub
 
 2. Create a virtual environment:
 
@@ -39,6 +36,5 @@ To run this project locally, follow these steps:
 
     ```bash
     uv run main.py
-
 
 Happy birdwatching!
