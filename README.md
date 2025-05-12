@@ -19,7 +19,7 @@ To run this project locally, follow these steps:
 
 ### Steps
 
-1. Download the repository from GitHub
+1. Download the repository from GitHub and in a command prompt path to where you downloaded it.
 
 2. Create a virtual environment:
 

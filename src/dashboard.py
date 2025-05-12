@@ -206,7 +206,7 @@ def update_species_graph(bird, state, county):
 
         return fig
     else:
-        return go.Figure(style={'display': 'none'})
+        return go.Figure()
 
 @callback(
     Output('nearby-table', 'children'),
