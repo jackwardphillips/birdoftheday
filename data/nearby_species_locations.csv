@@ -1,2 +1,4 @@
 speciesCode,comName,sciName,locId,locName,obsDt,howMany,lat,lng,obsValid,obsReviewed,locationPrivate,subId,distance
-rudduc,Ruddy Duck,Oxyura jamaicensis,L159307,George Washington Birthplace National Monument,2025-05-10 09:30,11,38.1847002,-76.9197464,True,True,False,S235743122,12.94
+acafly,Acadian Flycatcher,Empidonax virescens,L1157005,Bassett Hall Nature Trail,2025-05-08 09:41,4,37.2683026,-76.6936308,True,False,False,S234618863,1.24
+acafly,Acadian Flycatcher,Empidonax virescens,L1320412,Matoaka Lake and Woods,2025-05-07 08:11,6,37.2667353,-76.7241626,True,False,False,S234244647,1.49
+acafly,Acadian Flycatcher,Empidonax virescens,L5701000,Powhatan Creek Trail,2025-05-11 10:18,1,37.2475351,-76.7677,True,False,False,S236336878,5.84

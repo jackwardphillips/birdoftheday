@@ -7,9 +7,10 @@ American Crow,amecro
 American Goldfinch,amegfi
 American Herring Gull,amhgul1
 American Kestrel,amekes
-American Pipit,amepip
+American Oystercatcher,ameoys
 American Redstart,amered
 American Robin,amerob
+American White Pelican,amwpel
 American Wigeon,amewig
 American Woodcock,amewoo
 Anhinga,anhing
@@ -24,7 +25,10 @@ Black Scoter,blksco2
 Black Skimmer,blkski
 Black Vulture,blkvul
 Black-and-white Warbler,bawwar
-Black-bellied Whistling-Duck,bbwduc
+Black-bellied Plover,bkbplo
+Black-billed Cuckoo,bkbcuc
+Black-crowned Night Heron,bcnher
+Black-necked Stilt,bknsti
 Black-throated Blue Warbler,btbwar
 Black-throated Green Warbler,btnwar
 Blackburnian Warbler,bkbwar
@@ -35,6 +39,7 @@ Blue-gray Gnatcatcher,buggna
 Blue-headed Vireo,buhvir
 Blue-winged Teal,buwtea
 Blue-winged Warbler,buwwar
+Boat-tailed Grackle,botgra
 Bobolink,boboli
 Bonaparte's Gull,bongul
 Broad-winged Hawk,brwhaw
@@ -45,14 +50,11 @@ Brown-headed Cowbird,bnhcow
 Brown-headed Nuthatch,bnhnut
 Bufflehead,buffle
 Canada Goose,cangoo
-Canada Warbler,canwar
-Canvasback,canvas
 Cape May Warbler,camwar
 Carolina Chickadee,carchi
 Carolina Wren,carwre
 Caspian Tern,caster1
 Cedar Waxwing,cedwax
-Cerulean Warbler,cerwar
 Chestnut-sided Warbler,chswar
 Chimney Swift,chiswi
 Chipping Sparrow,chispa
@@ -62,13 +64,12 @@ Cliff Swallow,cliswa
 Common Gallinule,comgal1
 Common Grackle,comgra
 Common Loon,comloo
-Common Merganser,commer
+Common Nighthawk,comnig
 Common Raven,comrav
 Common Tern,comter
 Common Yellowthroat,comyel
 Cooper's Hawk,coohaw
 Dark-eyed Junco,daejun
-Dickcissel,dickci
 Double-crested Cormorant,doccor
 Downy Woodpecker,dowwoo
 Dunlin,dunlin
@@ -86,6 +87,7 @@ Fish Crow,fiscro
 Forster's Tern,forter
 Gadwall,gadwal
 Glossy Ibis,gloibi
+Golden-crowned Kinglet,gockin
 Grasshopper Sparrow,graspa
 Gray Catbird,grycat
 Gray-cheeked Thrush,gycthr
@@ -98,7 +100,9 @@ Greater Scaup,gresca
 Greater Yellowlegs,greyel
 Green Heron,grnher
 Green-winged Teal,gnwtea
+Gull-billed Tern,gubter2
 Hairy Woodpecker,haiwoo
+Helmeted Guineafowl,helgui
 Hermit Thrush,herthr
 Hooded Merganser,hoomer
 Hooded Warbler,hoowar
@@ -113,20 +117,22 @@ Killdeer,killde
 Laughing Gull,laugul
 Least Bittern,leabit
 Least Sandpiper,leasan
+Least Tern,leater1
+Lesser Black-backed Gull,lbbgul
 Lesser Scaup,lessca
 Lesser Yellowlegs,lesyel
-Lincoln's Sparrow,linspa
 Little Blue Heron,libher
 Louisiana Waterthrush,louwat
 Magnolia Warbler,magwar
 Mallard,mallar3
-Mallard x American Black Duck (hybrid),x00004
 Marsh Wren,marwre
 Merlin,merlin
+Mississippi Kite,miskit
 Mourning Dove,moudov
 Muscovy Duck,musduc
 Mute Swan,mutswa
 Nashville Warbler,naswar
+Nelson's Sparrow,nstspa
 Northern Bobwhite,norbob
 Northern Cardinal,norcar
 Northern Flicker,norfli
@@ -136,16 +142,20 @@ Northern House Wren,houwre
 Northern Mockingbird,normoc
 Northern Parula,norpar
 Northern Rough-winged Swallow,nrwswa
-Northern Shoveler,norsho
 Northern Waterthrush,norwat
+Orange-crowned Warbler,orcwar
 Orchard Oriole,orcori
 Osprey,osprey
 Ovenbird,ovenbi1
+Painted Bunting,paibun
 Palm Warbler,palwar
+Pectoral Sandpiper,pecsan
 Peregrine Falcon,perfal
 Pied-billed Grebe,pibgre
 Pileated Woodpecker,pilwoo
+Pine Siskin,pinsis
 Pine Warbler,pinwar
+Piping Plover,pipplo
 Prairie Warbler,prawar
 Prothonotary Warbler,prowar
 Purple Finch,purfin
@@ -153,6 +163,8 @@ Purple Martin,purmar
 Red Junglefowl,redjun
 Red-bellied Woodpecker,rebwoo
 Red-breasted Merganser,rebmer
+Red-breasted Nuthatch,rebnut
+Red-cockaded Woodpecker,recwoo
 Red-eyed Vireo,reevir1
 Red-headed Woodpecker,rehwoo
 Red-shouldered Hawk,reshaw
@@ -168,9 +180,10 @@ Royal Tern,royter1
 Ruby-crowned Kinglet,ruckin
 Ruby-throated Hummingbird,rthhum
 Ruddy Duck,rudduc
+Ruddy Turnstone,rudtur
 Rusty Blackbird,rusbla
-Saltmarsh Sparrow,sstspa
-Sandhill Crane,sancra
+Sanderling,sander
+Sandwich Tern,santer1
 Savannah Sparrow,savspa
 Scarlet Tanager,scatan
 Seaside Sparrow,seaspa
@@ -182,6 +195,7 @@ Short-billed Dowitcher,shbdow
 Snowy Egret,snoegr
 Solitary Sandpiper,solsan
 Song Sparrow,sonspa
+Sora,sora
 Spotted Sandpiper,sposan
 Summer Tanager,sumtan
 Surf Scoter,sursco
@@ -190,18 +204,18 @@ Swamp Sparrow,swaspa
 Tree Swallow,treswa
 Tricolored Heron,triher
 Tufted Titmouse,tuftit
-Tundra Swan,tunswa
 Turkey Vulture,turvul
 Veery,veery
-Vesper Sparrow,vesspa
-Warbling Vireo,warvir
+Virginia Rail,virrai
 Western Cattle-Egret,categr1
+Whimbrel,whimbr
 White Ibis,whiibi
 White-breasted Nuthatch,whbnut
 White-crowned Sparrow,whcspa
 White-eyed Vireo,whevir
 White-throated Sparrow,whtspa
 Wild Turkey,wiltur
+Willet,willet1
 Wilson's Snipe,wilsni1
 Wilson's Warbler,wlswar
 Winter Wren,winwre3
@@ -212,6 +226,7 @@ Yellow Warbler,yelwar
 Yellow-bellied Sapsucker,yebsap
 Yellow-billed Cuckoo,yebcuc
 Yellow-breasted Chat,yebcha
+Yellow-crowned Night Heron,ycnher
 Yellow-rumped Warbler,yerwar
 Yellow-throated Vireo,yetvir
 Yellow-throated Warbler,yetwar

@@ -1,120 +1,100 @@
 comName,howMany
-Ring-billed Gull,20
-Double-crested Cormorant,13
-Ruddy Duck,11
-Red-eyed Vireo,9
-Mallard,9
-Yellow-rumped Warbler,9
-Osprey,8
-Eastern Wood-Pewee,7
-White-eyed Vireo,7
-Tufted Titmouse,6
-Acadian Flycatcher,6
-American Redstart,6
-Cliff Swallow,5
-White-throated Sparrow,5
-Yellow-throated Warbler,5
-Carolina Wren,5
-Cedar Waxwing,5
-American Goldfinch,4
-Eastern Towhee,4
-American Robin,4
-Swainson's Thrush,4
-Common Grackle,4
-American Crow,4
-House Finch,4
-Killdeer,4
-Northern Parula,4
-Northern Cardinal,3
-Yellow-breasted Chat,3
-Brown-headed Cowbird,3
-Baltimore Oriole,3
-Tundra Swan,3
-Indigo Bunting,2
-Ruby-throated Hummingbird,2
-Spotted Sandpiper,2
-Tree Swallow,2
-Rose-breasted Grosbeak,2
-Red-winged Blackbird,2
-Rock Pigeon,2
-Northern Flicker,2
-Fish Crow,2
-Eastern Phoebe,2
-Great Crested Flycatcher,2
-Great Blue Heron,2
-European Starling,2
-Canada Goose,2
-Carolina Chickadee,2
-Blue-gray Gnatcatcher,2
-Chipping Sparrow,2
-Bald Eagle,2
-Barred Owl,2
-Barn Swallow,2
-Black-and-white Warbler,2
-Blue-headed Vireo,2
-Common Yellowthroat,2
-Chimney Swift,2
-Wood Duck,2
-Mourning Dove,2
-Red-headed Woodpecker,2
-Purple Martin,2
-Prairie Warbler,2
-Mute Swan,2
-House Sparrow,2
-Horned Lark,2
-Eastern Meadowlark,1
-Green Heron,1
-Great Horned Owl,1
-Gray-cheeked Thrush,1
-Gray Catbird,1
-Eastern Kingbird,1
-Eastern Bluebird,1
-Field Sparrow,1
-Black-throated Green Warbler,1
-Black-throated Blue Warbler,1
-Black Vulture,1
-Blackburnian Warbler,1
-Blue Jay,1
-Blue Grosbeak,1
-American Herring Gull,1
-Belted Kingfisher,1
-Blackpoll Warbler,1
-Chuck-will's-widow,1
-Chestnut-sided Warbler,1
-Cape May Warbler,1
-Common Loon,1
-Downy Woodpecker,1
-Cooper's Hawk,1
-Brown Thrasher,1
-Hairy Woodpecker,1
-Red-shouldered Hawk,1
-Red Junglefowl,1
-Red-bellied Woodpecker,1
-Orchard Oriole,1
-Ovenbird,1
-Pileated Woodpecker,1
-Pine Warbler,1
-Northern Rough-winged Swallow,1
-Northern Waterthrush,1
-Hooded Warbler,1
-Kentucky Warbler,1
-Laughing Gull,1
-Louisiana Waterthrush,1
-Northern Harrier,1
-Northern Mockingbird,1
-Red-tailed Hawk,1
-Solitary Sandpiper,1
-Swamp Sparrow,1
-Summer Tanager,1
-Sandhill Crane,1
-Scarlet Tanager,1
-Song Sparrow,1
-White-breasted Nuthatch,1
-Wild Turkey,1
-Turkey Vulture,1
-Veery,1
-Wood Thrush,1
-Yellow-billed Cuckoo,1
-Yellow Warbler,1
-Worm-eating Warbler,1
-Yellow-throated Vireo,1
+Canada Goose,7.0
+Carolina Wren,6.0
+Northern Cardinal,6.0
+Tufted Titmouse,5.0
+American Crow,5.0
+American Goldfinch,4.0
+Acadian Flycatcher,4.0
+European Starling,4.0
+Yellow-rumped Warbler,4.0
+Common Grackle,4.0
+Carolina Chickadee,4.0
+Black-and-white Warbler,3.0
+Gray Catbird,3.0
+Turkey Vulture,3.0
+Mallard,3.0
+Eastern Bluebird,3.0
+Chipping Sparrow,3.0
+Brown Thrasher,2.0
+American Redstart,2.0
+Eastern Phoebe,2.0
+Eastern Towhee,2.0
+Northern Parula,2.0
+Red-shouldered Hawk,2.0
+Spotted Sandpiper,2.0
+Tree Swallow,2.0
+Song Sparrow,2.0
+Sharp-shinned Hawk,2.0
+Ovenbird,2.0
+Black-throated Blue Warbler,2.0
+Barn Swallow,2.0
+Belted Kingfisher,1.0
+Black Vulture,1.0
+Barred Owl,1.0
+Baltimore Oriole,1.0
+American Robin,1.0
+Wilson's Warbler,1.0
+Eastern Kingbird,1.0
+Double-crested Cormorant,1.0
+Downy Woodpecker,1.0
+Common Yellowthroat,1.0
+Cape May Warbler,1.0
+Chimney Swift,1.0
+Cooper's Hawk,1.0
+Brown-headed Nuthatch,1.0
+Cedar Waxwing,1.0
+Blackpoll Warbler,1.0
+Black-throated Green Warbler,1.0
+Blue Grosbeak,1.0
+Blue Jay,1.0
+Blue-gray Gnatcatcher,1.0
+Blue-headed Vireo,1.0
+Pileated Woodpecker,1.0
+Northern Waterthrush,1.0
+Orchard Oriole,1.0
+Osprey,1.0
+Mourning Dove,1.0
+Northern Flicker,1.0
+Northern Mockingbird,1.0
+Louisiana Waterthrush,1.0
+Indigo Bunting,1.0
+Hairy Woodpecker,1.0
+Hermit Thrush,1.0
+House Finch,1.0
+Great Blue Heron,1.0
+Fish Crow,1.0
+Great Crested Flycatcher,1.0
+Green Heron,1.0
+Yellow Warbler,1.0
+Wood Duck,1.0
+Scarlet Tanager,1.0
+Veery,1.0
+White-eyed Vireo,1.0
+Prothonotary Warbler,1.0
+Pine Warbler,1.0
+Prairie Warbler,1.0
+Solitary Sandpiper,1.0
+Ruby-throated Hummingbird,1.0
+Red-tailed Hawk,1.0
+Red-winged Blackbird,1.0
+Summer Tanager,1.0
+Purple Martin,1.0
+Red-eyed Vireo,1.0
+Red-bellied Woodpecker,1.0
+Yellow-throated Warbler,1.0
+Yellow-breasted Chat,1.0
+Worm-eating Warbler,1.0
+Wood Thrush,1.0
+Yellow-throated Vireo,1.0
+White-throated Sparrow,1.0
+Wild Turkey,1.0
+White-breasted Nuthatch,1.0
+Brown-headed Cowbird,0.0
+Northern House Wren,0.0
+House Sparrow,0.0
+Killdeer,0.0
+Eastern Wood-Pewee,0.0
+Hooded Warbler,0.0
+Swainson's Thrush,0.0
+Red-headed Woodpecker,0.0
