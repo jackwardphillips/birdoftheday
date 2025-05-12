@@ -4,6 +4,8 @@ This project provides a dynamic dashboard for birdwatching enthusiasts, giving b
 
 This data is sourced using eBird's API, and for up to date information requires an API key, which can be obtained from their [website](https://ebird.org/data/download?_gl=1*7mjacs*_gcl_au*OTUxMTA4MzcxLjE3NDA0MjI3NTc.*_ga*NTQxNjQwMzEyLjE3NDA0MjI3NTc.*_ga_QR4NVXZ8BM*czE3NDcwNzE4NTgkbzc0JGcwJHQxNzQ3MDcxODYzJGo1NSRsMCRoMA..&_ga=2.89112600.280494711.1746969736-541640312.1740422757). Information on how to input your API key is included below. For test cases, some sample data has been uploaded for Williamsburg, Virginia, and can be accessed without an API key.
 
+Currently my personal life list as of May 5, 2025 is uploaded. To change it to yours, download yours from eBird and simply replace the ebird_world_life_list.csv file with yours. Make sure you do not change the name, however.
+
 ## Dashboard Features
 
 - **State and County Dropdowns**: Filters sightings by county.
