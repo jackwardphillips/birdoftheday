@@ -1,4 +1,4 @@
 speciesCode,comName,sciName,locId,locName,obsDt,howMany,lat,lng,obsValid,obsReviewed,locationPrivate,subId,distance
-acafly,Acadian Flycatcher,Empidonax virescens,L1157005,Bassett Hall Nature Trail,2025-05-08 09:41,4,37.2683026,-76.6936308,True,False,False,S234618863,1.24
-acafly,Acadian Flycatcher,Empidonax virescens,L1320412,Matoaka Lake and Woods,2025-05-07 08:11,6,37.2667353,-76.7241626,True,False,False,S234244647,1.49
-acafly,Acadian Flycatcher,Empidonax virescens,L5701000,Powhatan Creek Trail,2025-05-11 10:18,1,37.2475351,-76.7677,True,False,False,S236336878,5.84
+brwhaw,Broad-winged Hawk,Buteo platypterus,L299350,Rockefeller SP Preserve,2025-05-10 08:22,1,41.10804,-73.8378825,True,False,False,S235648934,9.15
+brwhaw,Broad-winged Hawk,Buteo platypterus,L122997,Marian Yarrow Nature Preserve,2025-05-10 13:13,2,41.28556,-73.62639,True,False,False,S235678964,17.45
+brwhaw,Broad-winged Hawk,Buteo platypterus,L1300573,New Canaan Nature Center,2025-05-11 09:00,1,41.1531961,-73.5025692,True,False,False,S236352760,21.25
