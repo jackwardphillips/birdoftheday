@@ -1,13 +1,12 @@
 # Birdwatching Dashboard
 
-This project provides a dynamic dashboard for birdwatching enthusiasts, allowing users to track bird sightings by state and county, view recent sightings, and monitor bird counts across selected regions.
+This project provides a dynamic dashboard for birdwatching enthusiasts, giving birdwatchers a recommended "bird of the day" to find during their next birdwatching trip. The bird of the day is recommended based on the most common birds in your area that you have not observed. For the given bird, the dashboard displays a snippet of information about the bird (sourced from Wikipedia), a list of at most 3 public hotspots where that bird has been observed, and a bar graph showing the trend of sightings for that species in the past 4 weeks.While the bird of the day autopopulates the bird dropdown bar, this information will be displayed for any bird inputted. The dashboard also provides some information about birds in the specified county, including the most common birds sighted and rare sightings. Lastly, the bottom plays a slideshow of images of the selected bird, also from Wikipedia.
+
+This data is sourced using eBird's API, and for up to date information requires an API key, which can be obtained from their [website](https://ebird.org/data/download?_gl=1*7mjacs*_gcl_au*OTUxMTA4MzcxLjE3NDA0MjI3NTc.*_ga*NTQxNjQwMzEyLjE3NDA0MjI3NTc.*_ga_QR4NVXZ8BM*czE3NDcwNzE4NTgkbzc0JGcwJHQxNzQ3MDcxODYzJGo1NSRsMCRoMA..&_ga=2.89112600.280494711.1746969736-541640312.1740422757).
 
 ## Features
 
-- **State and County Dropdowns**: Users can select a state and county to filter bird sightings.
-- **Recent Sightings**: A section displaying recent bird sightings.
-- **Bird Counts**: Displays bird counts for selected counties.
-- **Interactive Filters**: Users can interact with dropdowns to refine data.
+- **State and County Dropdowns**: Filters sightings by county.
   
 ## Installation
 
